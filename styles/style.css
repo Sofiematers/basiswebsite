@@ -201,7 +201,7 @@ section:nth-of-type(5) {
   transition: ease 250ms;
 }
 
-.overlay {
+section:nth-of-type(6) {
   font-size: x-large;
   padding-top: 50%;
   color: white;
@@ -211,7 +211,7 @@ section:nth-of-type(5) {
   overflow: hidden;
 }
 
-.overlay > img {
+section:nth-of-type(6) img {
   position: absolute;
   top: 0;
   left: 0;
@@ -221,7 +221,7 @@ section:nth-of-type(5) {
   z-index: -1; 
 }
 
-.insta {
+section:nth-of-type(7){
   justify-content: center;
   display: flex;
   position: relative;
@@ -230,14 +230,14 @@ section:nth-of-type(5) {
   padding: 2em;
 }
 
-.insta img {
+section:nth-of-type(7) img {
   object-fit: cover;
   position: absolute;
   height: 12vh;
   width: auto;
 }
 
- .insta a {
+section:nth-of-type(7) a {
   z-index: 4;
   margin-top: 2em;
   color: black;
