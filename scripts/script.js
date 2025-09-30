@@ -21,14 +21,13 @@ const valueDisplay = document.getElementById("fontsize-value");
 
 slider.addEventListener("input", () => {
   const size = slider.value + "px";
-  document.documentElement.style.fontSize = size; // html font-size aanpassen
+  document.documentElement.style.fontSize = size; 
   valueDisplay.textContent = size;
 
-  // Optioneel: bewaren in localStorage
   localStorage.setItem("fontSize", slider.value);
 });
 
-// Bij laden: kijk of er iets in localStorage staat
+
 window.addEventListener("DOMContentLoaded", () => {
   const saved = localStorage.getItem("fontSize");
   if (saved) {
@@ -37,6 +36,8 @@ window.addEventListener("DOMContentLoaded", () => {
     valueDisplay.textContent = saved + "px";
   }
 });
+
+// bron van chatgpt voor t maken van lettertype groote slider: https://chatgpt.com/share/68dba8f8-c8d4-8001-bb8b-833c95f9f636 
 
 
 toggle.addEventListener("click", () => {

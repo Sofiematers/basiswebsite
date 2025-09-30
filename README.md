@@ -84,9 +84,6 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 </details>
 
 
-
-
-
 ## Voortgang 1 (week 2)
 
 <details>
@@ -112,27 +109,28 @@ Alle opmerkingen die ik op mijn code heb of dingen die er nog in moeten heb  ik 
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  
+  Vragen: 
+  - Hoe maak ik de begwegend banner?
+  - Hoe haal ik de iconen van de site die niet in de afbeeldingen mee werden gegeven?
+  - Hoe zet ik bijna alles op mijn site in uppercase? type in dan in uppercase in mijn html?
+  
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - Dit kan je opzoeken op code.pen
+  - je kan een icoon als svg downloaden op https://www.svgrepo.com
+  - De tekst kan je hoofdletters maken in CSS text-transform uppercase, dat doe je bijv zo: h2 {text-transform: uppercase;
+
+  Extra punten:
+}
+  - Probeer minder divs te gebruiken in je code, dit kan je oplossen met een section, daarna voeg je een h2 element toe die je op hidden zet.
+  - Helaas mag je geen classes gebruiken, dus dat wordt n:th of type.
+  - In de footer kan je gebruik maken van een list (ul met li) en met linkjes (a).
 
 </details>
-
-
-
 
 
 ## Voortgang 2 (week 3)
@@ -141,31 +139,9 @@ Alle opmerkingen die ik op mijn code heb of dingen die er nog in moeten heb  ik 
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
-
-</details>
-
-
-
+  Ik heb de eerste pagina bijna helemaal af, ik moet nog een paar dingen zoals het hamburgermenu en ik moet nog wat dingen aanpassen. wat minder goed ging was dat ik met classes heb gewerkt, wat dus niet de bedoeling was. Het was wel een tegenvaller dat ik dit nu helemaal moet aanpassen. Ook lukte heb downloaden van mijn font niet, ik heb een student assistent er nog een berichtje over gestuurd, maar het heeft niet echt geholpen.
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 11.23.18.png" alt="screenshot van de site wat de student assistent als voorbeeld stuurde">.e
+  
 
 
 ## Toegankelijkheidstest 2/2 (week 4)
@@ -174,45 +150,15 @@ Alle opmerkingen die ik op mijn code heb of dingen die er nog in moeten heb  ik 
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Mijn site is meer toegangkelijk omdat:
+
+  - Ik gebruik consistend een 'alt' bij elke afbeelding, op de orginele Malibu site wordt dit niet gedaan, waardoor het minder toegangkelijk wordt voor mensen die een screenreader gebruiken.
+  - ik gebruik header, main, section, article en een footer. De Malibu site is opgedeeld in divs, dit wordt ook lastiger voor screenreaders om te begrijpen.
+  - ik heb mijn menu als nav met ul, li en a aangegeven, wat de semantische manier is om het te doen, de screenreader herkent dit als navigatie. Op de Malibu site zitten de meeste menu items in verkeerde containers.
+  - ik heb logische H1,H2,H3 en H4 gebruikt, terwijl ze op de Malibu site van H2 naar H5 naar H3 springen.
+
 
 </details>
-
-
-
-
-
-## Voortgang 3 (week 4)
-
-<details>
-  <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
-
-  ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
-</details>
-
-
-
 
 
 ## Eindgesprek (week 5)
@@ -221,19 +167,39 @@ Alle opmerkingen die ik op mijn code heb of dingen die er nog in moeten heb  ik 
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.29.40.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Hoe ik een bewegende banner maak:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.30.28.png" alt="bewegend banner">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  Hoe ik een goede slider maak:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.30.43.png" alt="slider">
+
+  Hoe ik te werk ga met nth-of-type:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.31.14.png" alt="nth-of-type">
+
+  Hoe ik svg iconen van een site haal:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.34.19.png" alt="svg iconen">
+
+  Hoe ik een slider maak waarbij je het lettertype aan kan passen:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.34.32.png" alt="Lettergrootte slider">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Het helemaal uitwerken van het hamburgermenu, die van mij:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.36.43.png" alt="hamburgermenu">
+  hoe die hoort:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.38.24.png" alt="hamburgermenu 2">
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De slider is niet helemaal identiek, die van mij:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.30.43.png" alt="slider">
+  hoe die hoort:
+  <img src="readme-images/Scherm­afbeelding 2025-09-30 om 13.40.25.png" alt="slider 2">
+
+
+
 </details>
 
 
@@ -245,12 +211,8 @@ Alle opmerkingen die ik op mijn code heb of dingen die er nog in moeten heb  ik 
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg). 
-  Nb. ChatGpT en andere AI horen er ook bij.
-  Nb. Vermeld de bronnen ook in je code.
-
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://codepen.io/fullcircledesign/pen/bGxJLRq (Bewegende banner)
+  2. https://chatgpt.com/share/68dba8f8-c8d4-8001-bb8b-833c95f9f636 (Lettertype grootte slider)
+  3. https://codepen.io/Sofie-Maters/pen/JoGKKVN (Carousel)
 
 </details>

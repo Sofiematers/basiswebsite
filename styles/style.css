@@ -54,7 +54,7 @@ a {
   margin-bottom: 2em;
 }
 
-label{
+label {
   margin-top: 5em;
 }
 
@@ -89,14 +89,14 @@ header video {
 }
 
 .hamburger {
-  width: 40px;
-  height: 40px;
+  width: 3em;
+  height: 3em;
   border-radius: 50%;
   background: white;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.2em 0.6em rgba(0, 0, 0, 0.2);
   cursor: pointer;
   border: none;
   position: relative;
@@ -104,18 +104,18 @@ header video {
 
 .hamburger span {
   position: absolute;
-  width: 15px;
-  height: 2.5px;
+  width: 1.3em;
+  height: 0.15em;
   background: black;
-  border-radius: 2px;
+  border-radius: 0.15em;
 }
 
 .hamburger span:first-child {
-  transform: translateY(-6px);
+  transform: translateY(-0.4em);
 }
 
 .hamburger span:last-child {
-  transform: translateY(6px);
+  transform: translateY(0.4em);
 }
 
 nav.hamburgermenu {
@@ -176,7 +176,7 @@ header h1 {
 header p {
   padding: 1em;
   position: relative;
-  max-width: 600px;
+  max-width: 60em;
   margin-left: 2.5em;
   margin-right: 2.5em;
   text-align: center;
@@ -192,7 +192,7 @@ img {
   height: auto;
 }
 
-header>div {
+header div {
   display: flex;
   justify-content: center;
 }
@@ -212,20 +212,10 @@ header img {
   background-color: #57bdb5;
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 8vh;
   font-weight: bold;
   text-transform: uppercase;
   width: 100%;
-  height: 11vh;
-}
-
-.example-left {
-  -webkit-animation: mymove 20s linear infinite;
-  /* Safari 4.0 - 8.0 */
-  white-space: nowrap;
-  animation: mymove 20s linear infinite alternate;
-  /* Bron bewegende banner: https://codepen.io/Sofie-Maters/pen/zxvgKPZ */
-  /* wel een class? */
+  height: 9vh;
 }
 
 section:nth-of-type(1) {
@@ -362,9 +352,9 @@ section:nth-of-type(8) {
   color: white;
   background-color: #723c91;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 175px));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(6.25em, 11em));
+  gap: 1.25em;
+  padding: 1.25em;
 }
 
 section:nth-of-type(8) h4 {
@@ -402,7 +392,7 @@ footer svg {
 
 footer a {
   font-weight: bolder;
-  font-size:large;
+  font-size: large;
   background: none;
   margin-left: 2em;
   text-align: left;
@@ -459,7 +449,7 @@ footer p {
 .nav-button {
   scrollbar-width: none;
   display: flex;
-  gap: 10px;
+  gap: 0.6em;
   overflow-x: auto;
   white-space: nowrap;
   margin-bottom: 1.5em;
@@ -481,11 +471,11 @@ footer p {
 #pagina2 section:nth-of-type(1) {
   background-color: #723c91;
   font-size: 0.8em;
-  padding: 20px;
+  padding: 1.25em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1em;
-  max-width: 800px;
+  max-width: 50em;
   margin: auto;
   text-align: center;
 }
@@ -508,7 +498,7 @@ footer p {
 }
 
 #pagina2 section:nth-of-type(1) h3 {
-  margin: 10px 0 5px;
+  margin: 0.6em 0 0.3em;
 }
 
 #pagina2 section:nth-of-type(1) button {
@@ -542,9 +532,9 @@ footer p {
   color: white;
   background-color: #723c91;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 175px));
-  gap: 20px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(6.25em, 11em));
+  gap: 1.25em;
+  padding: 1.25em;
 }
 
 #pagina2 section:nth-of-type(5) h4 {
@@ -589,31 +579,7 @@ footer p {
   background: white;
 }
 
-.banner-twee {
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  width: 100%;
-  height: auto;
-  position: relative;
-  margin: -0.2em; 
-  /* dit nog oplossen */
-}
 
-.banner-twee marquee {
-  font-weight: bolder;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-  font-size: 2.5em;
-}
-
-.banner-twee img {
-  height: 100%;
-}
 
 nav.hamburgermenu .btn {
   display: flex;
@@ -641,4 +607,61 @@ nav.hamburgermenu .btn {
   height: auto;
   gap: 2em;
 }
+
+@keyframes infiniteScroll {
+  from {
+    transform: translateX(0)
+  }
+
+  to {
+    transform: translateX(-50%)
+  }
+}
+
+.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.horizontal-scrolling-items {
+  display: flex;
+  font-size: bold;
+  font-size: 4em;
+  width: 2600px;
+  animation-name: infiniteScroll;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.horizontal-scrolling-items__item {
+  padding-right: 1em;
+  white-space: nowrap;
+}
+
+.banner-twee {
+  position: relative;
+  overflow: hidden;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.banner-twee .bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+/* <!-- Bron van bewegende banner: https://codepen.io/fullcircledesign/pen/bGxJLRq */
 
