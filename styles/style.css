@@ -625,7 +625,6 @@ nav.hamburgermenu .btn {
 
 .horizontal-scrolling-items {
   display: flex;
-  font-size: bold;
   font-size: 4em;
   width: 2600px;
   animation-name: infiniteScroll;
